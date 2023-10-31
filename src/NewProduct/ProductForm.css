@@ -1,0 +1,66 @@
+.product-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-form .product-form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.product-form-button {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-form-button:hover {
+    background-color: #0400ff4f;
+}
+.custom-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #1e3a8a;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+  }
+  
+  .custom-input::placeholder {
+    color: #999;
+  }
+  
+  .custom-input:focus {
+    outline: none;
+    border-color: #0400ff4f;
+    box-shadow: 0 0 5px rgba(68, 157, 68, 0.5);
+  }
+  .custom-label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.custom-label::after {
+    content: " *"; /* İsteğe bağlı: Zorunlu alanları işaretlemek için yıldız ekler */
+    color: #ff0000; /* Zorunlu alan işareti rengi */
+}
+
+.custom-label.required::after {
+    content: " *"; /* Zorunlu alanları işaretlemek için yıldız ekler */
+    color: #ff0000; /* Zorunlu alan işareti rengi */
+}
